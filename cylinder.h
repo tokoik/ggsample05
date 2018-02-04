@@ -1,14 +1,14 @@
-// •ÏŒ`‘O‚Ì“_ƒf[ƒ^
+ï»¿// å¤‰å½¢å‰ã®ç‚¹ãƒ‡ãƒ¼ã‚¿
 extern const GLfloat p0[][3];
 
-// •ÏŒ`Œã‚Ì“_ƒf[ƒ^
+// å¤‰å½¢å¾Œã®ç‚¹ãƒ‡ãƒ¼ã‚¿
 extern const GLfloat p1[][3];
 
-// ƒCƒ“ƒfƒbƒNƒXƒf[ƒ^
+// ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ãƒ‡ãƒ¼ã‚¿
 extern const GLuint e[];
 
-// ’¸“_‚Ì”
+// é ‚ç‚¹ã®æ•°
 extern const GLuint vertices;
 
-// ü•ª‚Ì”
+// ç·šåˆ†ã®æ•°
 extern const GLuint lines;

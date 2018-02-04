@@ -1,4 +1,4 @@
-#include <cmath>
+ï»¿#include <cmath>
 
 #include "gg.h"
 using namespace gg;
@@ -6,9 +6,9 @@ using namespace gg;
 #include "quaternion.h"
 
 //
-// ²‚Æ‰ñ“]Šp‚©‚ç’PˆÊlŒ³”‚ğ‹‚ß‚é
+// è»¸ã¨å›è»¢è§’ã‹ã‚‰å˜ä½å››å…ƒæ•°ã‚’æ±‚ã‚ã‚‹
 //
-//   q © ² (x, y, z) Šp“x (a)
+//   q â† è»¸ (x, y, z) è§’åº¦ (a)
 //
 void qmake(float *q, float x, float y, float z, float a)
 {
@@ -26,9 +26,9 @@ void qmake(float *q, float x, float y, float z, float a)
 }
 
 //
-// lŒ³”‚ÌÏ‚ğ‹‚ß‚é
+// å››å…ƒæ•°ã®ç©ã‚’æ±‚ã‚ã‚‹
 //
-//   p © q * r
+//   p â† q * r
 //
 void qmul(float *p, const float *q, const float *r)
 {
@@ -39,9 +39,9 @@ void qmul(float *p, const float *q, const float *r)
 }
 
 //
-// lŒ³”‚©‚ç‰ñ“]•ÏŠ·s—ñ‚ğ‹‚ß‚é
+// å››å…ƒæ•°ã‹ã‚‰å›è»¢å¤‰æ›è¡Œåˆ—ã‚’æ±‚ã‚ã‚‹
 //
-//   m © lŒ³” q
+//   m â† å››å…ƒæ•° q
 //
 void qrot(GLfloat *m, const float *q)
 {
@@ -70,9 +70,9 @@ void qrot(GLfloat *m, const float *q)
 }
 
 //
-// ‹…–ÊüŒ`•âŠÔ
+// çƒé¢ç·šå½¢è£œé–“
 //
-//   p © lŒ³” q ‚Æ lŒ³” r ‚ğ t ‚Å•âŠÔ‚·‚é
+//   p â† å››å…ƒæ•° q ã¨ å››å…ƒæ•° r ã‚’ t ã§è£œé–“ã™ã‚‹
 //
 void slerp(float *p, const float *q, const float *r, float t)
 {
@@ -102,15 +102,15 @@ void slerp(float *p, const float *q, const float *r, float t)
 }
 
 //
-// •¡”‚ÌƒNƒH[ƒ^ƒjƒIƒ“ŠÔ‚Ì‹…–ÊüŒ`•âŠÔiÜ‚êüj
+// è¤‡æ•°ã®ã‚¯ã‚©ãƒ¼ã‚¿ãƒ‹ã‚ªãƒ³é–“ã®çƒé¢ç·šå½¢è£œé–“ï¼ˆæŠ˜ã‚Œç·šï¼‰
 //
-//   p © t[i] ‚É‚¨‚¯‚éƒNƒH[ƒ^ƒjƒIƒ“ q[i], 0 <= i < n ‚É‘Î‚·‚é u ‚É‚¨‚¯‚é•âŠÔ’l
+//   p â† t[i] ã«ãŠã‘ã‚‹ã‚¯ã‚©ãƒ¼ã‚¿ãƒ‹ã‚ªãƒ³ q[i], 0 <= i < n ã«å¯¾ã™ã‚‹ u ã«ãŠã‘ã‚‹è£œé–“å€¤
 //
 void mslerp(float *p, const float *t, const float (*q)[4], int n, float u)
 {
   int i = 0, j = n - 1;
   
-  // u ‚ğŠÜ‚Ş t ‚Ì‹æŠÔ [t[i], t[i+1]) ‚ğ“ñ•ª–@‚Å‹‚ß‚é
+  // u ã‚’å«ã‚€ t ã®åŒºé–“ [t[i], t[i+1]) ã‚’äºŒåˆ†æ³•ã§æ±‚ã‚ã‚‹
   while (i < j)
   {
     int k = (i + j) / 2;

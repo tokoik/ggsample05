@@ -42,6 +42,9 @@
     <ClCompile Include="spline.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="ggsample05.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gg.h">
@@ -65,15 +68,15 @@
     <ClInclude Include="spline.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="Window.h">
+    <ClInclude Include="GgApplication.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="simple.frag">
+    <None Include="ggsample05.frag">
       <Filter>シェーダー ファイル</Filter>
     </None>
-    <None Include="simple.vert">
+    <None Include="ggsample05.vert">
       <Filter>シェーダー ファイル</Filter>
     </None>
   </ItemGroup>
