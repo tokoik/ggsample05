@@ -4,7 +4,7 @@ using namespace gg;
 #include "cylinder.h"
 
 // 変形前の点データ
-const GLfloat p0[][3] =
+const GLfloat p0[][3]
 {
   {  0.500000f, -0.900000f,  0.000000f },
   {  0.353553f, -0.900000f,  0.353553f },
@@ -89,7 +89,7 @@ const GLfloat p0[][3] =
 };
 
 // 変形後の点データ
-const GLfloat p1[][3] =
+const GLfloat p1[][3]
 {
   {  0.300000f, -0.500000f,  0.000000f },
   {  0.212132f, -0.500000f,  0.212132f },
@@ -174,7 +174,7 @@ const GLfloat p1[][3] =
 };
 
 // インデックスデータ
-const GLuint e[] =
+const GLuint e[]
 {
   0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 0,
   8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13, 14, 14, 15, 15, 8,
@@ -197,7 +197,7 @@ const GLuint e[] =
 };
 
 // 頂点の数
-const GLuint vertices = sizeof p0 / sizeof p0[0];
+const GLuint vertices{ static_cast<GLuint>(std::size(p0)) };
 
-// 線分の数
-const GLuint lines = sizeof e / sizeof e[0];
+// 稜線の数
+const GLuint lines{ static_cast<GLuint>(std::size(e)) };
