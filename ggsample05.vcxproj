@@ -164,6 +164,7 @@
     <ClInclude Include="quaternion.h" />
     <ClInclude Include="shader.h" />
     <ClInclude Include="spline.h" />
+    <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ggsample05.frag" />
