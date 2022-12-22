@@ -150,6 +150,7 @@
   <ItemGroup>
     <ClCompile Include="cylinder.cpp" />
     <ClCompile Include="gg.cpp" />
+    <ClCompile Include="GgApp.cpp" />
     <ClCompile Include="ggsample05.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="matrix.cpp" />
@@ -168,7 +169,6 @@
     <ClInclude Include="quaternion.h" />
     <ClInclude Include="shader.h" />
     <ClInclude Include="spline.h" />
-    <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ggsample05.frag" />
